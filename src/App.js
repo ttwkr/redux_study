@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import AddNumberRoot from "./component/addNumber/addnumberRoot";
+import DisplayNumberRoot from "./component/displayNumber/displaynumberRoot";
 import styled, { createGlobalStyle } from "styled-components";
 import "./App.css";
 
@@ -11,29 +13,6 @@ div{
 }
 `;
 
-class AddNumber extends Component {
-  render() {
-    return (
-      <div>
-        <h1>Add Number</h1>
-        <input type="button" value="+"></input>
-        <input type="text" value="0"></input>
-      </div>
-    );
-  }
-}
-
-class AddNumberRoot extends Component {
-  render() {
-    return (
-      <div>
-        <h1>Add Number Root</h1>
-        <AddNumber></AddNumber>
-      </div>
-    );
-  }
-}
-
 function App() {
   return (
     <>
@@ -45,28 +24,6 @@ function App() {
       </div>
     </>
   );
-}
-
-class DisplayNumber extends Component {
-  render() {
-    return (
-      <div>
-        <h1>Dispaly Number</h1>
-        <input type="text" value="0" readOnly></input>
-      </div>
-    );
-  }
-}
-
-class DisplayNumberRoot extends Component {
-  render() {
-    return (
-      <div>
-        <h1>DisplayNumber Root</h1>
-        <DisplayNumber></DisplayNumber>
-      </div>
-    );
-  }
 }
 
 export default App;
