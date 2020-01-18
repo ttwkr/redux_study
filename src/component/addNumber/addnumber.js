@@ -13,7 +13,7 @@ class AddNumber extends Component {
           type="button"
           value="+"
           onClick={() => {
-            store.dispatch({ type: "INCREMENT", size: this.state.size });
+            store.dispatch({ type: "INCREMENT", size: this.state.size }); //사이즈 값을 스테이트에 저장한다.
           }}
         ></input>
         <input
