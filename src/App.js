@@ -4,15 +4,6 @@ import DisplayNumberRoot from "./component/displayNumber/displaynumberRoot";
 import styled, { createGlobalStyle } from "styled-components";
 import "./App.css";
 
-const GlobalStyled = createGlobalStyle`
-div{
-  border : 5px solid #764abc;
-  margin : 10px;
-  color : #764abc;
-  padding : 10px;
-}
-`;
-
 class App extends Component {
   state = {
     number: 0
@@ -31,3 +22,12 @@ class App extends Component {
   }
 }
 export default App;
+
+const GlobalStyled = createGlobalStyle`
+div{
+  border : 5px solid #764abc;
+  margin : 10px;
+  color : #764abc;
+  padding : 10px;
+}
+`;
